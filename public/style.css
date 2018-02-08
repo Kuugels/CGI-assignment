@@ -1,0 +1,15 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.col-sm-4 {
+  border: solid black 1px !important;
+}
+
+.col-sm-8 {
+  border: solid black 1px !important;
+}
+
+.jumbotron {
+  text-align: center !important;
+}

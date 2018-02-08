@@ -4,7 +4,10 @@
   "description": "Testing phase assignment",
   "main": "app.js",
   "dependencies": {
-    "ejs": "^2.5.7"
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "request": "^2.83.0"
   },
   "devDependencies": {},
   "scripts": {
