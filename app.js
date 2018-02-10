@@ -10,6 +10,10 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
 
+// Database connection url
+var dburl = 'mongodb://admin:CGI54321@ds227858.mlab.com:27858/topimages';
+
+
 // Get images from imgur
 var options = {
   url: 'https://api.imgur.com/3/gallery/hot/viral/',

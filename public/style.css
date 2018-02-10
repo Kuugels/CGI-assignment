@@ -2,12 +2,40 @@ body {
   font-family: 'Roboto', sans-serif !important;
 }
 
-.col-sm-4 {
-  border: solid black 1px !important;
+td {
+  max-width: 110px !important;
+  max-height: 110px !important;
 }
 
-.col-sm-8 {
-  border: solid black 1px !important;
+h1 {
+  margin-top: 0;
+}
+
+#images, #image {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
+#images::-webkit-scrollbar, #image::-webkit-scrollbar {
+  display: none;
+}
+
+.col-md-4, .col-md-8 {
+  padding-right: 0;
+  padding-left: 0;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.img-thumbnail:hover {
+  border-color: lightgreen !important;
+}
+
+.img-responsive {
+  max-width: 80%;
 }
 
 .jumbotron {
