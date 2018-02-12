@@ -8,4 +8,3 @@ At first, I started this assignment by using 2-3 hours just to set up basic serv
 After that I spend around 2 hours to set up the MongoDb and to make the code for saving image metadata to it. When I got it working, I started to work on making search API. Making it proved to be a bit challenging because I had not made RESTful API's before. So in the end making it took around 2-3 hours and I didn't get it to work completely.
 
 In the end I spend an hour to make some functionality to basic site even thought I didn't get the search functionality to work.
- 
