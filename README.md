@@ -1,7 +1,7 @@
 # CGI-assignment
 Testing phase assignment
 
-#Work log
+- Work log -
 
 Before I started making this assignment I used few hours just practicing the use of node.js and MongoDB as I had never used them before. And overall, I used about 10-11 hours on this assignment. 
 
