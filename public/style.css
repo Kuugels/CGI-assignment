@@ -23,6 +23,10 @@ h1 {
   display: none;
 }
 
+#usr {
+  margin-bottom: 10px !important;
+}
+
 .col-md-4, .col-md-8 {
   padding-right: 0;
   padding-left: 0;
@@ -38,6 +42,7 @@ h1 {
   max-width: 80%;
 }
 
-.jumbotron {
+.page-header {
+  margin-top: 20px;
   text-align: center !important;
 }

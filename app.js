@@ -1,34 +1,30 @@
-var imgur = require('./getData');
-var request = require('request');
+var ctrl = require('./controller.js');
 var express = require('express');
 var http = require('https');
 var path = require('path');
+var mongoose = require('mongoose');
+var Image = require('./api/models/imageModel');
+var bodyParser = require('body-parser');
+var routes = require('./api/routes/imageRoutes');
+
 var app = express();
+
+mongoose.Promise = global.Promise;
+var dburl = 'mongodb://admin:CGI54321@ds227858.mlab.com:27858/topimages';
+mongoose.connect(dburl);
+
+// Retrive images and save them to db
+var imageData = ctrl.getImages();
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+routes(app); //register the route
 
 // Set view engine
 app.set('view engine', 'ejs');
 
 app.use(express.static(__dirname + '/public'));
-
-// Database connection url
-var dburl = 'mongodb://admin:CGI54321@ds227858.mlab.com:27858/topimages';
-
-
-// Get images from imgur
-var options = {
-  url: 'https://api.imgur.com/3/gallery/hot/viral/',
-  headers: {
-    Authorization: "Client-ID 1049ee991ed7d71",
-  }
-}
-
-request(options, function(err, res, body) {
-  if(err) {
-    console.log(err);
-    return
-  }
-  //console.log(JSON.parse(body));
-})
 
 // Index page
 app.get('/', function(req, res) {
@@ -39,5 +35,6 @@ app.get('/search', function(req, res) {
   res.render('search');
 })
 
-app.listen(8080);
-console.log('Listening port 8080...');
+app.listen(app.get('port'), function {
+  console.log('Node app is running on port', app.get('port'));
+});

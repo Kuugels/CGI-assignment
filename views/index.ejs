@@ -8,26 +8,30 @@
 
 <body>
 
-  <div class="jumbotron">
-    <h1>Imgurs Most Viral Images</h1>
+  <div class="page-header">
+    <h1>Image Search</h1>
   </div>
 
   <div class="container">
 
     <div class="row">
+      <label for="usr"><h2>Search:</h2></label>
+      <input type="text" class="form-control" id="usr">
+    </div>
 
+    <div class="row">
       <!--Single image-->
       <div class="col-md-8">
-        <h1>Image Title</h1>
+        <h1 id="imgTitle">Image Title</h1>
         <div id="image">
           <img src="https://i.imgur.com/QcdIUC5.jpg" class="img-responsive" alt="Imgur image">
         </div>
 
       </div>
 
-      <!-- Image table-->
+      <!-- Search results-->
       <div class="col-md-4">
-        <h1>Most viral images</h1>
+        <h1>Search Results</h1>
         <div id="images"></div>
       </div>
 
