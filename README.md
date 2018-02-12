@@ -1,6 +1,8 @@
 # CGI-assignment
 Testing phase assignment
 
+#Work log
+
 Before I started making this assignment I used few hours just practicing the use of node.js and MongoDB as I had never used them before. And overall, I used about 10-11 hours on this assignment. 
 
 At first, I started this assignment by using 2-3 hours just to set up basic server and to make a simple index page. After I got the server working I started making code to retrieve images using Imgur's API and it took maybe an hour. 
